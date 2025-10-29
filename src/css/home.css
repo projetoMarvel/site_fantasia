@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #12122B;
+    font-family: 'Courier New', Courier, monospace;
+    color: #AAAA91;
+}
+.cabecalho{
+    background: #848478;
+    color: #383845;
+    height: 75px;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+}
+.cabecalho-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.cabecalho-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.cabecalho-menu li{
+    margin-left: 20px;
+}
+.cabecalho-menu a{
+    color: #12122B;
+    text-decoration: none;
+}
+.cabecalho-menu a:hover{
+    color: #2717b3;
+}
+.banner{
+    background-image: url(../assets/img6.jpg);
+    background-size: cover;
+    height: 700px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    transition: background-image 1s ease-in-out;
+}
+.banner-overlay{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1; /*garante que a camada de sobreposição fique sobre a img*/
+}
+/*Pseudo elementos executa uma ação antes*/
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1; /*garante que a camada de sobreposição fique sobre a img*/
+}
+.banner-conteudo{
+    width: 600px;
+    position: relative;
+    z-index: 2;/*garante que a camada de sobreposição fique sobre a img*/
+}
+.banner-titulo{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.banner-descricao{
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+.banner-btn{
+    background: #383845;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #AAAA91;
+    border: none;
+    margin: 0 10px;
+}
+.banner-btn:hover{
+    box-shadow: 3px 3px 6px #303030;
+    background-color: #291e86;
+    transition: 0.4s;
+    transform: translateX(-3px);
+    transform: scale(110%);
+}
+.sessao-filmes{
+    padding: 20px;
+}
+.filme-titulo{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.carrossel{
+    position: relative;
+    overflow: hidden;
+}
+.carrossel img{
+    width: 100%;
+    height: 300px;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease-in-out;
+}
+.carrossel-lista{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carrossel-item{
+    min-width: 200px;
+    padding: 10px;
+}
+.carrossel-item:hover{
+    transition: transform .3s ease-in-out;
+    transform: scale(1.1);
+}
+.btn-carrossel{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #AAAA91;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+}
+.btn-anterior{
+    left: 0;
+}
+.btn-proximo{
+    right: 0;
+}
