@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #12122B;
+    font-family: 'Courier New', Courier, monospace;
+    color: #383845;
+    display:flex;
+    justify-content: center;
+}
+
+.login-container {
+  background-color: #AAAA91;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #383845;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #848478;
+  color: #383845;
+  border-radius: 5px;
+  background-color: #848478;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #383845;
+  color: #AAAA91;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #848478;
+  color: #383845;
+}
+
+.login-container .link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.btn-voltar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #AAAA91;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.btn-voltar:hover {
+  color: #848478;
+  transform: scale(1.02);
+}

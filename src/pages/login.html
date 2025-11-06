@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <a href="home.html" class="btn-voltar">✖</a>
+    <div class="login-container">
+        <h2>Entrar</h2>
+        <form id="formLogin">
+            <input type="text" placeholder="Usuário" required id="login">
+            <input type="password" placeholder="Senha" required id="senha">
+            <button type="button" onclick="logar()">Login</button>
+            <p class="link">Não tem conta? <a href="/index.html">Cadastre-se</a></p>
+        </form>
+    </div>
+
+  <script src="/src/js/login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
