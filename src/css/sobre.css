@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #12122B;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #AAAA91;
+}
+
+.cabecalho{
+  font-family: 'Courier New', Courier, monospace;
+  background: #848478;
+  color: #383845;
+  height: 75px;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+}
+.cabecalho-nav{
+  display: flex;
+  justify-content: space-around;
+}
+.cabecalho-menu{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.cabecalho-menu li{
+  margin-left: 20px;
+  text-indent: 2em;
+}
+.cabecalho-menu a{
+  color: #12122B;
+  text-decoration: none;
+  font-weight: 600;
+}
+.cabecalho-menu a:hover{
+  color: #291e86;
+}
+
+.sobre-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.8;
+}
+.texto-sobre h2 {
+  margin-top: 30px;
+  color: #AAAA91;
+  justify-self: center;
+}
+
+.texto-sobre p {
+  line-height: 1.6;
+  margin-top: 10px;
+  text-indent: 1.5em;
+}
+
+.texto-sobre ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.texto-sobre li {
+  margin-bottom: 8px;
+}
+
+.btn-voltar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #909090;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 999;
+}
+
+.btn-voltar:hover {
+  color: #151515;
+  transform: scale(1.02);
+}
