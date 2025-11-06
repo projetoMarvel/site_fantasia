@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #12122B;
+    font-family: 'Courier New', Courier, monospace;
+    color: #383845;
+}
+.cabecalho{
+    background: #848478;
+    color: #383845;
+    height: 75px;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+}
+.cabecalho-nav{
+    display: flex;
+    justify-content: space-around;
+}
+.cabecalho-menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.cabecalho-menu li{
+    margin-left: 20px;
+    text-indent: 1.5em;
+}
+.cabecalho-menu a{
+    color: #12122B;
+    text-decoration: none;
+    font-weight: 600;
+}
+.cabecalho-menu a:hover{
+    color: #291e86;
+}
+
+#conteudo{
+    display: grid;
+    grid-template-columns: 2fr 10px;
+}
+main{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.produto{
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #202020;
+    background: #AAAA91;
+    border-radius: 30px;
+    text-align: center;
+}
+.produto img{ 
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.preco{
+    font-weight: 700;
+    margin-top: 30px;
+    color: #12122B;
+    text-align: center;
+    font-size: 1.7em;
+    
+}
+#conteudo button{
+    background: #12122B;
+    color: #AAAA91;
+    border-radius: 15px;
+    padding: 15px 45px;
+    cursor: pointer;
+    display: block;
+    margin: 25px auto 0 auto; /* cima, direita, baixo, esquerda */
+    transition: 0.2s; /* Transição suave */
+}
+#conteudo button:hover{
+    box-shadow: 0px 0px 8px #bebebe; /* Adiciona uma sombra branca */
+    transform: scale(1.05); /* Efeito de zoom leve */
+    background: #383838;
+    color:#e8e8e8;
+}
