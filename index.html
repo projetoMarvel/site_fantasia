@@ -8,22 +8,24 @@
   <title>Lista Tarefas</title>
 </head>
 
+<header>
+  <a href="./src/pages/home.html" class="btn-voltar">✖</a>
+</header>
+
 <body>
-  <h1>LISTA DE TAREFAS</h1>
-  <p><label for="task">TAREFA:</label>
-    <input type="text" id="task" size="25px">
-  </p>
-  <div>
-    <button id="btnAdicionar" onclick="adcionaTarefa()">Adicionar Tarefa</button>
-    <button id="btnRemover" onclick="removeTarefa()">Remover Tarefa</button>
+  <div class="conteudo">
+    <h1>LISTA DE TAREFAS</h1>
+    <p><label for="task">TAREFA:</label>
+      <input type="text" id="task" size="25px">
+    </p>
+    <div>
+      <button id="btnAdicionar" onclick="adcionaTarefa()">Adicionar Tarefa</button>
+      <button id="btnRemover" onclick="removeTarefa()">Remover Tarefa</button>
+    </div>
+    <p id="lista"></p>
   </div>
-
-
-  <p id="lista"></p>
-
-
-
   <script src="./src/js/script.js"></script>
+
 </body>
 
 </html>

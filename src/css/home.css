@@ -18,7 +18,7 @@ body{
 }
 .cabecalho-nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .cabecalho-menu{
     list-style: none;
@@ -27,13 +27,15 @@ body{
 }
 .cabecalho-menu li{
     margin-left: 20px;
+    text-indent: 1.5em;
 }
 .cabecalho-menu a{
     color: #12122B;
     text-decoration: none;
+    font-weight: 600;
 }
 .cabecalho-menu a:hover{
-    color: #2717b3;
+    color: #291e86;
 }
 .banner{
     background-image: url(../assets/img6.jpg);
@@ -128,13 +130,16 @@ body{
     transform: scale(1.1);
 }
 .btn-carrossel{
+    font-size: larger;
+    font-weight: 700;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
+    background-color: #12122B;
+    background: rgba(18,18,43,0.7);
     color: #AAAA91;
     border: none;
-    border-radius: 50%;
+    border-radius: 40%;
     padding: 15px;
     cursor: pointer;
 }

@@ -3,11 +3,41 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+.conteudo{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+header {
+    color: #e8e8e8;
     padding: 20px;
-    margin: 0;
+    position: relative;
+    display: flex;
+}
+
+
+.btn-voltar {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #909090;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.btn-voltar:hover {
+    color: #151515;
+    transform: scale(1.02);
 }
 
 /* Estilo para o título principal */
