@@ -1,84 +1,103 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background: #12122B;
-    font-family: 'Courier New', Courier, monospace;
-    color: #383845;
-    display:flex;
-    justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.login-container {
-  background-color: #AAAA91;
-  padding: 30px 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  width: 100%;
-  max-width: 350px;
-  text-align: center;
-  margin-top: 10%;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('../assets/img-login.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
-.login-container h2 {
-  margin-bottom: 20px;
-  color: #383845;
-}
-
-.login-container input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #848478;
-  color: #383845;
-  border-radius: 5px;
-  background-color: #848478;
-}
-
-.login-container button {
-  width: 100%;
-  padding: 10px;
-  background-color: #383845;
-  color: #AAAA91;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.login-container button:hover {
-  background-color: #848478;
-  color: #383845;
-}
-
-.login-container .link {
-  margin-top: 15px;
-  font-size: 14px;
-}
-
-.login-container a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.btn-voltar {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  text-decoration: none;
-  font-size: 24px;
-  color: #AAAA91;
+.container {
+  width: 420px;
   background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  z-index: 2;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 10px;
+  color: #fff;
+  padding: 30px 40px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  backdrop-filter: blur(10px);
 }
 
-.btn-voltar:hover {
-  color: #848478;
-  transform: scale(1.02);
+.container h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #c5c5c5;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 28%;
+  font-size: 20px;
+}
+
+.login {
+  width: 100%;
+  height: 50%;
+  background-color: #5c1616;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+
+}
+
+.login:hover {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  color: #fff;
+  transition: 0.5s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 350px;
+    padding: 20px 25px;
+  }
+
+  .container h1 {
+    font-size: 28px;
+  }
+
+  .input-box input {
+    padding: 15px 40px 15px 15px;
+  }
+
+  .Lembrar-Senha,
+  .Conta {
+    font-size: 13px;
+  }
 }
